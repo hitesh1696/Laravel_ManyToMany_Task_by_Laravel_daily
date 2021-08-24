@@ -1212,7 +1212,7 @@ class CountriesSeeder extends Seeder
             ],
         ];
 
-        $chunks = array_chunk($countries, 50);
+        $chunks = array_chunk($countries, 240);
 
         foreach ($chunks as $chunk) {
             Country::insert($chunk);
